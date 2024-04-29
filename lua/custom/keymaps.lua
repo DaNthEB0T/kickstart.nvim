@@ -10,5 +10,3 @@ map('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move Line Down' })
 map('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move Line Up' })
 map('v', '<A-j>', ":m '>+1<CR>gv=gv", { desc = 'Move Selection Down' })
 map('v', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move Selection Up' })
-
-map('n', '<leader>tn', '<cmd>Neotree toggle<cr>', { desc = 'Toggle Neotree' })
