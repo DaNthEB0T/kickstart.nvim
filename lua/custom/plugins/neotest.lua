@@ -29,11 +29,11 @@ return {
     command! NeotestResults lua require("neotest").output_panel.toggle()
 ]]
 
-    map('n', '<leader>Ts', ':Neotest<CR>:NeotestSummaryOpen<CR>', { desc = 'Run Test [S]uite' })
-    map('n', '<leader>Tf', ':NeotestFile<CR>', { desc = 'Test [F]ile' })
-    map('n', '<leader>TS', ':NeotestStop<CR>', { desc = 'Tests [S]top' })
-    map('n', '<leader>To', ':NeotestSummaryOpen<CR>', { desc = 'Summary [O]pen' })
-    map('n', '<leader>Tc', ':NeotestSummaryClose<CR>', { desc = 'Summary [C]lose' })
-    map('n', '<leader>Tr', ':NeotestResults<CR>', { desc = 'Tests [R]results' })
+    map('n', '<leader>Ts', ':Neotest<CR>:NeotestSummaryOpen<CR>', { desc = 'Run [T]est [S]uite' })
+    map('n', '<leader>Tf', ':NeotestFile<CR>', { desc = '[T]est [F]ile' })
+    map('n', '<leader>TS', ':NeotestStop<CR>', { desc = '[T]ests [S]top' })
+    map('n', '<leader>To', ':NeotestSummaryOpen<CR>', { desc = '[T]est Summary [O]pen' })
+    map('n', '<leader>Tc', ':NeotestSummaryClose<CR>', { desc = '[T]est Summary [C]lose' })
+    map('n', '<leader>Tr', ':NeotestResults<CR>', { desc = '[T]ests [R]results' })
   end,
 }
