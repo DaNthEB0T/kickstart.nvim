@@ -799,11 +799,13 @@ require('lazy').setup({
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     opts = {
-      -- transparent = true,
-      -- styles = {
-      --   sidebars = 'transparent',
-      --   floats = 'transparent',
-      -- },
+      transparent = true,
+      styles = {
+        sidebars = 'transparent',
+        floats = 'transparent',
+      },
+      hide_inactive_statusline = true,
+      lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
     },
     init = function()
       -- Load the colorscheme here.
@@ -933,5 +935,6 @@ require('lazy').setup({
   },
 })
 
+vim.opt.laststatus = 3 -- Only one status line as globalstatus in lualine doesn't work
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=2 sw=2 et
