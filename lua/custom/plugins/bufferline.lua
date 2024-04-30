@@ -2,8 +2,16 @@ return {
   'akinsho/bufferline.nvim',
   version = '*',
   dependencies = 'nvim-tree/nvim-web-devicons',
-  config = function()
-    vim.opt.termguicolors = true
-    require('bufferline').setup {}
-  end,
+  opts = {
+    options = {
+      offsets = {
+        {
+          filetype = 'neo-tree',
+          text = 'File Manager',
+          text_align = 'left',
+          highlight = 'Directory',
+        },
+      },
+    },
+  },
 }
