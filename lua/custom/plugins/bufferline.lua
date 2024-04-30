@@ -8,10 +8,11 @@ return {
         {
           filetype = 'neo-tree',
           text = 'File Manager',
-          text_align = 'left',
+          text_align = 'center',
           highlight = 'Directory',
         },
       },
+      separator_style = 'slant',
     },
   },
 }
