@@ -644,6 +644,7 @@ require('lazy').setup({
 
   { -- Autoformat
     'stevearc/conform.nvim',
+    event = { 'BufWritePre' },
     lazy = false,
     keys = {
       {
